@@ -1,0 +1,32 @@
+# --- secrets: never commit tokens ---
+*.token
+*token*.txt
+hf.txt
+git.txt
+.env
+.env.*
+!.env.example
+
+# --- the official Boogu-Image checkout (cloned by scripts/install.sh) ---
+/Boogu-Image/
+
+# --- model weights & outputs (huge) ---
+models/
+outputs/
+*.safetensors
+*.ckpt
+# keep the README screenshot, ignore all other images
+*.png
+*.jpg
+*.jpeg
+*.webp
+!assets/ui.png
+
+# --- envs / caches / logs ---
+.venv/
+venv/
+__pycache__/
+*.pyc
+.hf_modules_cache/
+*.log
+.cache/
